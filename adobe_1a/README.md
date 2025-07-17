@@ -9,3 +9,4 @@
 3. Run the container:
    ```powershell
    docker run --rm -v ${PWD}\input:/app/input -v ${PWD}\output:/app/output --network none adobe-1a
+4. Output json files can be seen from the `output` folder
