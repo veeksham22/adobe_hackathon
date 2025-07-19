@@ -1,5 +1,5 @@
 {
-    "title": "Overview",
+    "title": "Overview Foundation Level Extensions",
     "outline": [
         {
             "level": "H1",
@@ -23,22 +23,12 @@
         },
         {
             "level": "H2",
-            "text": "1.",
+            "text": "1. Introduction to the Foundation Level Extensions",
             "page": 6
         },
         {
             "level": "H2",
-            "text": "Introduction to the Foundation Level Extensions",
-            "page": 6
-        },
-        {
-            "level": "H2",
-            "text": "2.",
-            "page": 7
-        },
-        {
-            "level": "H2",
-            "text": "Introduction to Foundation Level Agile Tester Extension",
+            "text": "2. Introduction to Foundation Level Agile Tester Extension",
             "page": 7
         },
         {
@@ -73,22 +63,7 @@
         },
         {
             "level": "H2",
-            "text": "3.",
-            "page": 10
-        },
-        {
-            "level": "H2",
-            "text": "Overview of the Foundation Level Extension –",
-            "page": 10
-        },
-        {
-            "level": "H2",
-            "text": "Agile Tester",
-            "page": 10
-        },
-        {
-            "level": "H2",
-            "text": "Syllabus",
+            "text": "3. Overview of the Foundation Level Extension – Agile Tester Syllabus",
             "page": 10
         },
         {
@@ -103,12 +78,7 @@
         },
         {
             "level": "H2",
-            "text": "4.",
-            "page": 12
-        },
-        {
-            "level": "H2",
-            "text": "References",
+            "text": "4. References",
             "page": 12
         },
         {
