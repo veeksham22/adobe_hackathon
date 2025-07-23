@@ -1,12 +1,42 @@
-# Adobe 1B PDF Selector & Extractor
+# Adobe Challenge 1B – Relevant PDF Section Selector
 
-## Approach
-This solution processes a set of PDFs and a JSON input to select and extract relevant information based on the challenge requirements. It uses heuristics and text analysis to match and extract the required content, outputting structured JSON files for downstream use.
+This project solves Adobe Hackathon Challenge 1B by selecting and ranking the most relevant sections from a set of PDFs based on a given persona and job-to-be-done.
 
-## Models and Libraries Used
-- **PyMuPDF (fitz):** For PDF parsing and text extraction.
-- **Python Standard Library:** For file operations, JSON handling, and regular expressions.
+## Objective
 
+Given:
+- A directory of PDFs
+- A `challenge1b_input.json` file with:
+  - A persona (e.g., Travel Planner)
+  - A task (e.g., Plan a trip of 4 days for 10 college friends)
+
+The system returns:
+- Top 5 relevant sections
+- Full text of each matched section
+
+## How It Works
+
+1. Extracts structured headings from PDFs using font-size-based logic.
+2. For each heading, collects corresponding page text.
+3. Converts all section texts and the input query into TF-IDF vectors.
+4. Computes cosine similarity between the query and each section.
+5. Ranks and returns the top 5 sections.
+
+## Input Format
+
+Place in `/input`:
+- PDFs
+- `challenge1b_input.json`:
+```json
+{
+  "persona": { "role": "Travel Planner" },
+  "job_to_be_done": { "task": "Plan a trip of 4 days for a group of 10 college friends." },
+  "documents": [
+    { "filename": "South of France - Cities.pdf" },
+    ...
+  ]
+}
+```
 ## How to Build and Run
 
 ### Prerequisites
@@ -33,6 +63,12 @@ This solution processes a set of PDFs and a JSON input to select and extract rel
    ```sh
    python main.py
    ```
+### Dependencies
+```text
+pymupdf
+scikit-learn
+numpy
+```
 
 ## Sample Input/Output
 
