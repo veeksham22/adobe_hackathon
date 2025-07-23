@@ -1,26 +1,58 @@
-# Persona-Driven Document Intelligence (Adobe Hack 1b)
-
-## How it works
-- Uses your 1a extractor (PyMuPDF, font-size/outline based)
-- Chunks text by heading, tags with document, section, and page
-- Uses TF-IDF vector search (no network, fast, reproducible)
-- Ranks all sections using semantic search w.r.t persona/task string
-- For each top section, finds the most relevant paragraph as a refined sub-section
-
-## How to run
-
-```
-docker build --platform linux/amd64 -t adobe-1b .
-docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none adobe-1b
-
-- Input: All challenge PDFs + challenge1b_input.json in `input/`
-- Output: challenge1b_output.json in `output/`
+# Adobe 1B PDF Selector & Extractor
 
 ## Approach
-Modular: Separates outline extraction and section relevance ranking
+This solution processes a set of PDFs and a JSON input to select and extract relevant information based on the challenge requirements. It uses heuristics and text analysis to match and extract the required content, outputting structured JSON files for downstream use.
 
-Generalized: No hardcoding of keywords. Persona/task to section matching uses semantic similarity
+## Models and Libraries Used
+- **PyMuPDF (fitz):** For PDF parsing and text extraction.
+- **Python Standard Library:** For file operations, JSON handling, and regular expressions.
 
-Offline and Efficient: TF-IDF model, no internet calls, instant scoring. Embedding model (<1GB) can be swapped in.
+## How to Build and Run
 
-Output: See the provided sample format. Each "extracted section" includes document, title, rank, page; sub-section analysis finds the best granular paragraph per section.
+### Prerequisites
+- Docker (recommended)
+- Or: Python 3.8+ and pip (if running locally)
+
+### Using Docker (Recommended)
+1. Build the Docker image:
+   ```sh
+   docker build -t adobe-1b .
+   ```
+2. Run the container:
+   ```sh
+   docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none adobe-1b
+   ```
+   (On Windows PowerShell, use `${PWD}` instead of `$(pwd)`.)
+
+### Running Locally (Without Docker)
+1. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+2. Run the script:
+   ```sh
+   python main.py
+   ```
+
+## Sample Input/Output
+
+### Input
+- Place your PDF files and the challenge input JSON in the `input/` directory.
+- Example: `input/challenge1b_input.json`, `input/South of France - Cuisine.pdf`
+
+### Output
+- The extracted/selected data will be saved as JSON files in the `output/` directory, e.g.:
+  - `output/challenge1b_output.json`
+  - `output/South of France - Cuisine.json`
+
+#### Example Output (snippet)
+```json
+{
+    "selected": [
+        {"file": "South of France - Cuisine.pdf", "content": "..."}
+    ]
+}
+```
+
+## More Details
+See `approach_explanation.md` for a detailed explanation of the methodology.

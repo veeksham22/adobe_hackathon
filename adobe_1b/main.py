@@ -9,8 +9,8 @@ if __name__ == "__main__":
     input_dir = "/app/input"
     output_dir = "/app/output"
 
-    # Step 1: Process PDFs to generate JSON outlines (1A)
-    process_folder(input_dir, output_dir)
+    # Step 1: Process PDFs to generate JSON outlines (1A), but do not write files
+    outlines = process_folder(input_dir, write_files=False)
 
     # Step 2: Check for presence of challenge1b_input.json (1B requirement)
     persona_file = os.path.join(input_dir, "challenge1b_input.json")

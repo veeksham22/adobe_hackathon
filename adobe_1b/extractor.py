@@ -172,11 +172,17 @@ def extract_outline_from_pdf(pdf_path):
     }
 
 
-def process_folder(input_dir, output_dir):
-    os.makedirs(output_dir, exist_ok=True)
+def process_folder(input_dir, output_dir=None, write_files=True):
+   
+    results = {}
+    if write_files and output_dir:
+        os.makedirs(output_dir, exist_ok=True)
     for file in os.listdir(input_dir):
         if file.endswith(".pdf"):
             result = extract_outline_from_pdf(os.path.join(input_dir, file))
-            out_path = os.path.join(output_dir, file.replace(".pdf", ".json"))
-            with open(out_path, "w", encoding="utf-8") as f:
-                json.dump(result, f, indent=4, ensure_ascii=False)
+            results[file] = result
+            if write_files and output_dir:
+                out_path = os.path.join(output_dir, file.replace(".pdf", ".json"))
+                with open(out_path, "w", encoding="utf-8") as f:
+                    json.dump(result, f, indent=4, ensure_ascii=False)
+    return results
