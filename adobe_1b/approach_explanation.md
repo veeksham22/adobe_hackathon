@@ -43,7 +43,7 @@ This is the core component of the 1B solution.
 
 #### a. Query Construction
 
-A natural language query is synthesized from the persona and task fields in the input JSON. For example:
+A natural language query is synthesized from the persona and task fields in the input JSON. For example: `Travel Planner needs to Plan a trip of 4 days for 10 college friends.`
 
 #### b. Vectorization with TF-IDF
 
