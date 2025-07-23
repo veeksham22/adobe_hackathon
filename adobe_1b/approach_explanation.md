@@ -1,5 +1,4 @@
-# Approach Explanation: Adobe 1B PDF Selector & Extractor
-
+# Approach Explanation: Round 1B: Persona-Driven Document Intelligence
 ## Overview
 
 The objective of this solution is to address Adobe Hackathon Challenge 1B by selecting and extracting the most relevant sections from a collection of PDF documents, guided by a given persona and job-to-be-done. The goal is not only to parse and structure document content but also to evaluate which sections are contextually important to the provided criteria and rank them accordingly.
