@@ -3,12 +3,12 @@
     "outline": [
         {
             "level": "H1",
-            "text": "1. Name of the Government Servant",
+            "text": "Application form for grant of LTC advance",
             "page": 1
         },
         {
             "level": "H1",
-            "text": "2. Designation",
+            "text": "1. 2.",
             "page": 1
         },
         {
@@ -18,22 +18,17 @@
         },
         {
             "level": "H1",
-            "text": "4. PAY + SI + NPA",
+            "text": "4. 5.",
             "page": 1
         },
         {
             "level": "H1",
-            "text": "5. Whether permanent or temporary",
+            "text": "6. 7.",
             "page": 1
         },
         {
             "level": "H1",
-            "text": "6. Home Town as recorded in the Service Book",
-            "page": 1
-        },
-        {
-            "level": "H1",
-            "text": "7. Whether wife / husband is employed and if so whether entitled to LTC",
+            "text": "Whether wife / husband is employed and if so whether entitled to LTC",
             "page": 1
         },
         {
@@ -53,7 +48,7 @@
         },
         {
             "level": "H1",
-            "text": "10. Single rail fare/bus fare from the headquarters to home town/place of visit by shortest route.",
+            "text": "10. Single headquarters to home town/place of visit by shortest route.",
             "page": 1
         },
         {
@@ -63,42 +58,22 @@
         },
         {
             "level": "H1",
-            "text": "S.No Name Age Relationship",
+            "text": "S.No",
             "page": 1
         },
         {
             "level": "H1",
-            "text": "1. 2.",
+            "text": "1. 5.",
             "page": 1
         },
         {
             "level": "H1",
-            "text": "3. 4.",
+            "text": "12. Amount of advance required.",
             "page": 1
         },
         {
             "level": "H1",
-            "text": "5. 6.",
-            "page": 1
-        },
-        {
-            "level": "H1",
-            "text": "12. Amount of advance required. Rs.",
-            "page": 1
-        },
-        {
-            "level": "H1",
-            "text": "I declare that the particulars furnished above are true and correct to the best of my knowledge. I undertake to produce the tickets for the outward journey within ten days of receipt of the advance.",
-            "page": 1
-        },
-        {
-            "level": "H1",
-            "text": "In the event of cancellation of the journey or if I fail to produce the tickets within ten days of receipt of advance, I undertake to refund the entire advance in one lump sum.",
-            "page": 1
-        },
-        {
-            "level": "H1",
-            "text": "Date Signature of Government Servant.",
+            "text": "I declare that the particulars furnished above are true and correct to the best of my knowledge. I In the event of cancellation of the journey or if I fail to produce the tickets within ten days of receipt of Date Signature of Government Servant.",
             "page": 1
         }
     ]

@@ -2,13 +2,8 @@
     "title": "RFP: R RFP: R RFP: R RFP: Reeeequest f quest f quest f quest foooor Pr r Pr r Pr r Proposal oposal oposal oposal",
     "outline": [
         {
-            "level": "H3",
-            "text": "Ontario’s Libraries Working Together",
-            "page": 1
-        },
-        {
             "level": "H1",
-            "text": "To Present a Proposal for Developing the Business Plan for the Ontario Digital Library",
+            "text": "Ontario’s Libraries To Present a Proposal for Developing",
             "page": 1
         },
         {
@@ -17,14 +12,74 @@
             "page": 1
         },
         {
-            "level": "H2",
+            "level": "H1",
             "text": "Ontario’s Digital Library",
             "page": 2
         },
         {
             "level": "H3",
-            "text": "A Critical Component for Implementing Ontario’s Road Map to Prosperity Strategy",
+            "text": "A Critical Component for Implementing Ontario’s Road Map to",
             "page": 2
+        },
+        {
+            "level": "H1",
+            "text": "Please note that we reserve the right not to select any of the submitted proposals and may",
+            "page": 3
+        },
+        {
+            "level": "H1",
+            "text": "was incorporated in 1997 as a province-wide library consortium. TAL works collaboratively",
+            "page": 4
+        },
+        {
+            "level": "H1",
+            "text": "Local points of entry:",
+            "page": 5
+        },
+        {
+            "level": "H1",
+            "text": "Confidence that the services and resources people are using are credible,",
+            "page": 6
+        },
+        {
+            "level": "H1",
+            "text": "the marketing and communications plan for the ODL",
+            "page": 7
+        },
+        {
+            "level": "H1",
+            "text": "Evaluation and Awarding of Contract",
+            "page": 8
+        },
+        {
+            "level": "H1",
+            "text": "Appendix A: ODL Envisioned Phases & Funding",
+            "page": 9
+        },
+        {
+            "level": "H1",
+            "text": "capabilities. The challenge is to secure resources sufficient to both sustain the original investments and",
+            "page": 10
+        },
+        {
+            "level": "H1",
+            "text": "Appendix B:",
+            "page": 11
+        },
+        {
+            "level": "H1",
+            "text": "3.5 Ontario Library Association representative (ex-officio) ( OLA to appoint one representative )",
+            "page": 12
+        },
+        {
+            "level": "H1",
+            "text": "8.3 The Steering Committee is accountable to its constituent groups and other stakeholders for",
+            "page": 13
+        },
+        {
+            "level": "H1",
+            "text": "Appendix C:",
+            "page": 14
         }
     ]
 }
