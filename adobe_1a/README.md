@@ -6,6 +6,8 @@ This solution extracts the outline (headings and structure) from PDF files using
 ## Models and Libraries Used
 - **PyMuPDF (fitz):** For PDF parsing and text extraction.
 - **Python Standard Library:** For file operations, JSON handling, and regular expressions.
+- **unicodedata.category:** For visible character checks, which is robust for multilingual text.
+
 
 ## How to Build and Run
 
