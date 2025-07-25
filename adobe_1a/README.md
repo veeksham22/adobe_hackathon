@@ -1,7 +1,7 @@
 # Adobe 1A PDF Outline Extractor
 
 ## Approach
-This solution extracts the outline (headings and structure) from PDF files using font size, boldness, and spatial layout heuristics. It identifies headings by analyzing text properties such as font size, boldness, and their position on the page. The extractor is robust to various PDF layouts and ignores decorative or non-informative elements.
+This solution extracts the outline (headings and structure) from PDF files using font size, boldness, and spatial layout heuristics. It identifies headings by analyzing text properties such as font size, boldness, and their position on the page. The extractor is robust to various PDF layouts and ignores decorative or non-informative elements.The code is language-neutral by default and is likely to work for text-based, Unicode-compliant ```multilingual``` PDFs as well.
 
 ## Models and Libraries Used
 - **PyMuPDF (fitz):** For PDF parsing and text extraction.
